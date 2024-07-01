@@ -1,0 +1,58 @@
+.serviceContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 70px 9%;
+    .Serviceheading{
+        padding-bottom: 50px;
+        display: flex;;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            font-size: small;
+            font-weight: 500;
+            color: #767676;
+          }
+    
+          h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            color: rgb(55, 62, 75);
+    
+            span {
+              color: rgb(183, 43, 43);
+            }
+          }
+    }
+    .cardscontainers{
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0px 0px 2px rgb(138, 138, 138);
+        width: 100%;
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+         
+            cursor: pointer;
+            width: 100%;
+            img{
+                width: 150px;
+                height: 100px;
+                padding: 10px;
+            }
+            p{
+                padding: 20px;
+                font-family: "poppins";
+            }
+          
+        }
+        .card:hover{
+            box-shadow: 0px 0px 1px rgb(71, 71, 71);
+        }
+    }
+    
+}

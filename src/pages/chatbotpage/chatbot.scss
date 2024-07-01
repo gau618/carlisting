@@ -1,0 +1,161 @@
+.Chatbotcontainer{
+    margin: 60px 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin: 10px 0px;
+        font-weight: 900;
+        font-family: "puppins";
+        span{
+            color: rgb(208, 24, 24);
+            font-weight: bold;
+            font-family: "puppins";
+        }
+    }
+    .serchcontainer{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    input{
+       width: 80%;
+       height: 30px;
+       font-size: large;
+       outline: none;
+       border-radius: 20px 0px 0px 20px;
+       padding-left: 10px;
+       border-color: #999999;
+    }
+    button{
+        width: 15%;
+        height: 33px;
+        border-radius:  0px 20px 20px 0px ;
+        border: none;
+        background:rgb(208, 24, 24);
+        color: #fff;
+        font-weight: 600;
+    }
+    
+}
+.BuyPagecontainer{
+    margin: 80px 9%;
+    .car-card {
+        display: flex;
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      
+        .car-image {
+          position: relative;
+          width: 50%;
+          
+          img {
+            width: 100%;
+            height: auto;
+          }
+      
+          .favorite-icon {
+            position: absolute;
+            color: red;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+          }
+        }
+      
+        .car-details {
+          padding: 20px;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      
+          .car-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      
+            h2 {
+              font-size: 24px;
+              margin: 0;
+            }
+      
+            .car-price {
+             width: 100px;
+              color: white;
+              padding: 10px;
+              font-size: 20px;
+              text-align: center;
+              background: linear-gradient(45deg, rgb(208, 24, 24) 50%,rgb(37, 50, 65)  50%);
+              background-size: 200% 100%;
+              background-position: left bottom;
+              transition: background-position 0.2s ease-out;
+            }
+            .car-price:hover{
+                background-position: right bottom;
+              }
+            
+          }
+      
+          p {
+            margin: 20px 0;
+            font-size: 16px;
+          }
+      
+          .car-specs {
+            display: flex;
+            flex-wrap: wrap;
+      
+            div {
+              width: 50%;
+              margin-bottom: 10px;
+              font-size: 16px;
+      
+              strong {
+                font-weight: bold;
+              }
+            }
+          }
+      
+          .compare-button {
+            width: 200px;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            background: linear-gradient(45deg,rgb(37, 50, 65) 50%,  rgb(208, 24, 24) 50%);
+            background-size: 200% 100%;
+            background-position: left bottom;
+            transition: background-position 0.2s ease-out;
+      
+            &:hover {
+              background-position: right bottom;
+            }
+          }
+        }
+      }
+      @media (max-width:900px) {
+        .car-card{
+            flex-direction: column;
+            .car-image{
+                width: 100%;
+            }
+            .car-details{
+                width: 94%;
+                font-size: medium;
+            }
+        }
+      }
+    }
+}
+@media (max-width:768px) {
+    .Chatbotcontainer{
+        margin: 60px 0px;
+    }
+}

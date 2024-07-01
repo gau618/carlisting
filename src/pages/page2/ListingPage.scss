@@ -1,0 +1,30 @@
+.Listingpagecontainer {
+    padding-top: 60px;
+    .listingpageImg {
+      position: relative; // Ensure relative positioning of the container
+      width: 100%;
+  
+      .mainImg {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+      }
+      .carnamebox{
+        position: absolute;
+        left: 46%;
+        top: 43%;
+        z-index: 1;
+        color: white;
+        font-size: 30px;
+      }
+      .baseimg {
+        position: absolute; // Position the base image absolutely within the container
+        top: 0;
+        left: 15%;
+        width: 70%; // Ensure it covers the whole container
+        height: 98.5%; // Ensure it covers the whole container
+        object-fit: cover;
+      }
+    }
+  }
+  
